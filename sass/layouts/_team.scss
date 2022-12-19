@@ -1,0 +1,123 @@
+.team-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--color-secondary-background);
+}
+
+.team__title {
+  color: var(--color-title-text);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+  @include tablet {
+    margin-bottom: 30px;
+  }
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team__item {
+  width: 100%;
+  @include mobile {
+    @include calc(2, 30px);
+  }
+  @include tablet {
+    @include calc(4, 30px);
+  }
+}
+
+.team__image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+// .section.team {
+//   background-color: var(--color-secondary-background);
+//   padding: 0 auto;
+//   margin: 0 auto;
+
+//   }
+// }
+
+// .team-list {
+//   margin-top: 50px;
+//   margin-bottom: 0px;
+//   list-style: none;
+//   & .title {
+//     color: var(--color-title-text);
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     letter-spacing: 0.03em;
+//     margin-top: 0px;
+//     margin-bottom: 0px;
+//     text-align: center;
+//     padding-top: 30px;
+//     padding-bottom: 10px;
+//   }
+// }
+
+// .team-position {
+//   font-size: 16px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   margin-top: 0px;
+//   margin-bottom: 0px;
+// }
+
+// .employee {
+//   background-color: var(--color-white-background);
+//   // margin-right: 30px;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   text-align: center;
+//   // width: calc((100%-90px)/4);
+//   width: 100%;
+//   }
+
+// .social-team-list {
+//   display: flex;
+//   justify-content: center;
+//   gap: 10px;
+//   margin-top: 16px;
+//   margin-bottom: 30px;
+// }
+
+// .social-team-item {
+//   width: 44px;
+//   height: 44px;
+// }
+
+// .social-team-link {
+//   display: flex;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 50%;
+//   background-color: var(--color-white-background);
+//   align-items: center;
+//   justify-content: center;
+//   transition: background-color var(--transition), fill var(--transition);
+//   &:hover,
+//   &:focus {
+//     background-color: var(--color-action);
+//   }
+// }
+
+// .social-team-icon {
+//   fill: #afb1b8;
+//   transition: fill var(--transition);
+//   .social-team-link:hover &,
+//   .social-team-link:focus & {
+//     fill: #ffffff;
+//   }
+// }

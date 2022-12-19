@@ -1,0 +1,26 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 738px;
+  }
+  // це теж саме що і такий варінт і він
+  // @include tablet {
+  //     max-width: 738px;
+  //   }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+  // це теж саме що і такий варінт
+  // @include desktop {
+  //    max-width: 1200px;
+  //   }
+}
+
+

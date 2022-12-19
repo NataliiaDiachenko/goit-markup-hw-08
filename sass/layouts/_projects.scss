@@ -1,0 +1,147 @@
+.portfolio__list {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: left;
+  gap: 8px;
+}
+
+.portfolio__item {
+  @include calc(3, 8px);
+
+  @include mobile {
+    @include calc(3, 8px);
+  }
+  @include tablet {
+    @include calc(5, 8px);
+  }
+}
+
+.portfolio__button {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.62;
+  font-family: inherit;
+  list-style: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  background-color: var(--color-secondary-background);
+  transition: background-color var(--transition), box-shadow var(--transition),
+    color var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--color-white-text);
+    background-color: var(--color-action);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.projects-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.projects__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.projects__item {
+  width: 100%;
+  @include tablet {
+    width: 354px;
+    @include calc(2, 30px);
+  }
+  @include desktop {
+    width: 370px;
+    @include calc(3, 30px);
+  }
+}
+
+.projects__wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.projects__text {
+  position: absolute;
+  top: 0;
+  color: var(--color-white-text);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-right: 24px;
+  padding-left: 24px;
+  height: 100%;
+  transform: translateY(calc(100% + 1px));
+  transition: transform 200ms linear;
+  overflow: auto;
+}
+
+.projects__direction {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid var(--color-line-direction-item);
+  border-top: none;
+}
+
+.direction__title {
+  color: var(--color-title-text);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.direction__text {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--color-primary-text);
+}
+
+.projects__link {
+  display: block;
+  text-decoration: none;
+  background-color: var(--color-white-background);
+  transition: box-shadow var(--transition);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.projects__link:hover .projects__text,
+.projects__link:focus .projects__text {
+  transform: translateY(0);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}

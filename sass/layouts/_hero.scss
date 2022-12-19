@@ -1,0 +1,81 @@
+.hero-page {
+  text-align: center;
+  padding: 0px;
+}
+
+.hero__container {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
+}
+
+.overlay {
+  background-color: var(--color-futter-background);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include tablet {
+    width: 768px;
+    height: 400px;
+  }
+  @include desktop {
+    width: 1600px;
+    height: 600px;
+  }
+}
+
+.hero__title {
+  color: var(--color-white-text);
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.62;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  @include mobile {
+    font-size: 26px;
+  }
+  @include tablet {
+    font-size: 26px;
+  }
+  @include desktop {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero__button {
+  color: var(--color-white-text);
+  background-color: var(--color-action);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: 1 px solid var(--color-action);
+  border-radius: 4px;
+  padding-left: 32px;
+  padding-right: 32px;
+  min-width: 200px;
+  min-height: 50px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 30px;
+  transition: background-color var(--transition), color var(--transition);
+  &:hover,
+  &:focus {
+    background-color: var(--color-blue-button);
+  }
+}

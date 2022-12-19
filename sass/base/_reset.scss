@@ -1,0 +1,45 @@
+:root {
+  --color-dark: #000000;
+  --color-primary-text: #757575;
+  --color-title-text: #212121;
+  --color-white-text: #ffffff;
+  --color-action: #2196f3;
+  --color-blue-button: #188ce8;
+  --color-secondary-button: #f5f4fa;
+  --color-white-background: #ffffff;
+  --color-secondary-background: #f5f4fa;
+  --color-futter-background: #2f303a;
+  --color-line-header: #ececec;
+  --color-line-direction-item: #eeeeee;
+  --color-line-clients: #afb1b8;
+  --transition: 250ms linear, visibility cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.body {
+  color: var(--color-primary-text);
+  font-family: Roboto, sans-serif;
+  background-color: var(--color-white-background);
+  font-size: 14px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
