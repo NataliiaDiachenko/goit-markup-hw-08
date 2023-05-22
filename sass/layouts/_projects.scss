@@ -1,24 +1,16 @@
 .portfolio__list {
-  width: 100%;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: left;
+  margin: 0;
   gap: 8px;
-}
-
-.portfolio__item {
-  @include calc(3, 8px);
-
-  @include mobile {
-    @include calc(3, 8px);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  width: 326px;
   @include tablet {
-    @include calc(5, 8px);
+    justify-content: center;
+    width: 100%;
   }
 }
 
 .portfolio__button {
-  text-align: center;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;

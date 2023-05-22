@@ -26,11 +26,12 @@
 }
 
 .clients__item {
-  // width: 100%;
   width: 210px;
   height: 92px;
-  @include calc(2, 30px);
 
+  @include mobile {
+    @include calc(2, 30px);
+  }
   @include tablet {
     @include calc(3, 30px);
     width: 226px;

@@ -2,12 +2,13 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
   @media screen and (min-width: 480px) {
-    max-width: 450px;
+   width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 738px;
+    width: 768px;
   }
   // це теж саме що і такий варінт і він
   // @include tablet {
@@ -15,7 +16,7 @@
   //   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+   width: 1200px;
   }
   // це теж саме що і такий варінт
   // @include desktop {
